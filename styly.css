@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --hlavni-barva: #F03000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item a, .nav-item__button a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--hlavni-barva)
+  }
+  
+  .nav-item__button {
+      border: 1px solid var(--hlavni-barva);
+      background-color: var(--hlavni-barva);
+      }
+
+  .nav-item__button a{
+    color: white;
+  }
+  
+  .logo img {
+    width: 175px;
+    vertical-align: middle;
+  }
