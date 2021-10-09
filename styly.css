@@ -19,39 +19,63 @@ body {
 
 nav {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .logo {
+.logo {
     display: inline-block;
-  }
+}
   
-  .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
-  }
+}
   
-  .nav-item a, .nav-item__button a {
+.nav-item a, .nav-item__button a {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     color: var(--hlavni-barva)
-  }
+}
   
-  .nav-item__button {
+.nav-item__button {
       border: 1px solid var(--hlavni-barva);
       background-color: var(--hlavni-barva);
-      }
+}
 
-  .nav-item__button a{
+.nav-item__button a{
     color: white;
-  }
+}
   
-  .logo img {
+.logo img {
     width: 175px;
     vertical-align: middle;
-  }
+}
+
+.article__first{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 20px;
+    padding: 0 60px 0 60px;
+}
+
+.article__main--left {
+    background-image: url(podklady/palmy.jpg);
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+
+.article__side-top--right {
+    background-image: url(podklady/jezero.jpg);
+    grid-area: 1/2;
+}
+
+.article__side-bottom--right {
+    background-image: url(podklady/nakole.jpg);
+    grid-area: 2/2;
+}
