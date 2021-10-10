@@ -65,7 +65,8 @@ nav {
 }
 
 .article__main--left {
-    grid-area: 1/1;
+    grid-column: 1;
+    grid-row: 300px;
     border: solid 2px greenyellow;
     background-image: url(podklady/palmy.jpg);
     background-repeat: no;
@@ -76,7 +77,8 @@ nav {
     padding: 250px 0px 0px 20px ;
 }
 
-.article__main_price--left p {
+.article__main_price--left p, 
+.article__side_price--right--top p {
     border: 1px solid var(--hlavni-barva);
     background-color: var(--hlavni-barva);
     display: inline;
@@ -86,6 +88,14 @@ nav {
 .article__main_price--left {
     position: relative;
     bottom: 230px;
+}
+
+.article__side-top--right {
+    grid-column: 2;
+    border: solid 2px pink;
+    background-image: url(podklady/jezero.jpg);
+    background-repeat: no-repeat;
+    background-size: fill;
 }
 
 
